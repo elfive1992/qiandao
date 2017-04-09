@@ -112,9 +112,12 @@ class RegisterHandler(BaseHandler):
 
         <p>点击以下链接验证邮箱，当您的签到失败的时候，会自动给您发送通知邮件。</p>
 
-        <p><a href="http://%s/verify/%s">http://%s/verify/%s</a></p>
+        <p><a href="https://%s/verify/%s">https://%s/verify/%s</a></p>
 
         <p>点击或复制到浏览器中打开</p>
+
+        <p>如果点击出现验证失败的情况，可以尝试复制到浏览器中打开</p>
+        <p>目前发现部分企业邮箱会出现这样的情况</p>
 
         <p>您也可以不验证邮箱继续使用签到的服务，我们不会继续给您发送任何邮件。</p>
         """ % (config.domain, verified_code, config.domain, verified_code), async=True)
@@ -233,9 +236,12 @@ class PasswordResetHandler(BaseHandler):
 
         <p>点击以下链接完成您的密码重置（一小时内有效）。</p>
 
-        <p><a href="http://%s/password_reset/%s">http://%s/password_reset/%s</a></p>
+        <p><a href="https://%s/password_reset/%s">https://%s/password_reset/%s</a></p>
 
         <p>点击或复制到浏览器中打开</p>
+        
+        <p>如果点击出现验证失败的情况，可以尝试复制到浏览器中打开</p>
+        <p>目前发现部分企业邮箱会出现这样的情况</p>
 
         """ % (config.domain, verified_code, config.domain, verified_code), async=True)
 
