@@ -12,7 +12,7 @@ Web
 
 ```
 apt-get install python-dev autoconf g++ python-pbkdf2
-pip install tornado u-msgpack-python jinja2 chardet requests pbkdf2 pycrypto
+pip install tornado u-msgpack-python jinja2 chardet requests pbkdf2 pycrypto chardet
 pip install mysql-connector-python-rf==2.1.3
 ```
 
