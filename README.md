@@ -15,6 +15,8 @@ apt-get install python-dev autoconf g++ python-pbkdf2
 pip install tornado u-msgpack-python jinja2 chardet requests pbkdf2 pycrypto chardet
 pip install mysql-connector-python-rf==2.1.3
 ```
+如果最后安装 mysql-connector-python-rf 的时候出现错误，在后面加上一个 --egg 参数就行了。
+
 
 可选数据库：sqlite, Mysql
 可选启用 redis 功能
